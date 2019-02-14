@@ -5,6 +5,7 @@
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 p {
@@ -14,4 +15,9 @@ p {
 a {
     text-decoration: none;
     color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

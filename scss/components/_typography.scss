@@ -1,0 +1,78 @@
+// ---------------------
+// About section
+// ---------------------
+.about {
+    background: url("../img/programare.jpg") no-repeat;
+    background-size: cover;
+    padding: 2rem 1rem;
+}
+
+.about-title {
+    margin-top: 0.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgb(156, 138, 33);
+    text-align: center;
+}
+
+.about-subtitle {
+    color: rgb(15, 15, 15);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 0.4rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// -------------------
+// Experience section
+// --------------------
+.experience {
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    h3 {
+        text-align: center;
+        color: $primary-color;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.education {
+    list-style-type: disc;
+    padding-inline-start: 25px;
+    li {
+        margin-bottom: 0.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.skills {
+    text-align: center;
+    @include flexy(flex, $dir: column, $align: center);
+    li {
+        padding: 0.3rem;
+        font-size: 1.2rem;
+    }
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.skill {
+    @include flexy(flex, $align: center);
+    margin-bottom: 0.5rem;
+}

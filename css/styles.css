@@ -337,6 +337,7 @@ template {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 p {
@@ -346,6 +347,170 @@ p {
 a {
   text-decoration: none;
   color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about {
+  background: url("../img/programare.jpg") no-repeat;
+  background-size: cover;
+  padding: 2rem 1rem;
+}
+
+.about-title {
+  margin-top: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #9c8a21;
+  text-align: center;
+}
+
+.about-subtitle {
+  color: #0f0f0f;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 0.4rem;
+}
+.about-subtitle:last-child {
+  margin-bottom: 0;
+}
+
+.experience {
+  margin-top: 2rem;
+}
+
+.card {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+.card h3 {
+  text-align: center;
+  color: gray;
+}
+.card p {
+  text-align: center;
+}
+
+.education {
+  list-style-type: disc;
+  padding-inline-start: 25px;
+}
+.education li {
+  margin-bottom: 0.5rem;
+}
+.education li:last-child {
+  margin-bottom: 0;
+}
+
+.skills {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills li {
+  padding: 0.3rem;
+  font-size: 1.2rem;
+}
+.skills svg {
+  width: 30px;
+  height: 30px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  width: 110px;
+}
+
+nav {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.navigation a {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: gray;
+}
+.navigation a:hover {
+  background-color: #24be24;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.project {
+  position: relative;
+}
+
+.project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-me {
+  text-align: center;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+.created-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.created-by img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.created-by p {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+.created-by p:last-child {
+  margin-bottom: 0;
+}
+.created-by a {
+  background-color: #5f5ffd;
+  color: #fff;
+  font-style: italic;
+  padding: 0.3rem;
+  border-radius: 3px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
