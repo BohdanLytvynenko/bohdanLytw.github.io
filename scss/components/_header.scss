@@ -1,15 +1,31 @@
 header {
     padding: 1rem;
     @include flexy(flex, $dir: column, $align: center);
+    @media screen and (min-width: 850px) {
+        flex-direction: row;
+        padding: 0.3rem 4rem;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+    }
 }
 
 .header-logo {
     width: 110px;
+    @media screen and (min-width: 850px) {
+        margin-right: auto;
+        width: 70px;
+    }
 }
 
 nav {
     margin-top: 0.5rem;
     width: 100%;
+    @media screen and (min-width: 850px) {
+        width: auto;
+        color: #fff;
+    }
 }
 
 .navigation {
@@ -24,6 +40,16 @@ nav {
             background-color: $link-hover;
             color: #fff;
             border-radius: 5px;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        @include flexy(flex, $just: space-between);
+    }
+    @media screen and (min-width: 850px) {
+        justify-content: flex-start;
+        a {
+            color: #000;
+            font-weight: bold;
         }
     }
 }
